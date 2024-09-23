@@ -42,3 +42,17 @@ CREATE TABLE Assignations (
     FOREIGN KEY (tacheID) REFERENCES Taches(tacheID) ON DELETE CASCADE,
     FOREIGN KEY (utilisateurID) REFERENCES Utilisateurs(utilisateurID) ON DELETE SET NULL
 );
+
+
+insert into 
+  `Utilisateurs` (
+    nom, 
+    email, 
+    `motDePasse`
+  )
+values
+  (
+    "CuresureMedico", 
+    "curesuremedico@test.com", 
+    "$2b$10$aUkt09X7IBggwLKMhvUkzu0xVs/R4f3AED.wHBzEmo0P3PvSKnBzK"
+  );
